@@ -1,0 +1,32 @@
+.up-btn svg {
+	width: 2.1875rem;
+	height: 2.1875rem;
+}
+
+.up-btn {
+	position: fixed;
+	bottom: 9.375rem;
+	right: 3.125rem;
+	cursor: pointer;
+	display: none;
+	color: var(--purple);
+	transition: color .2s linear;
+	-webkit-transition: color .2s linear;
+	-moz-transition: color .2s linear;
+	-ms-transition: color .2s linear;
+	-o-transition: color .2s linear;
+}
+
+.up-btn--show {
+	display: block;
+}
+
+.up-btn:hover {
+	color: var(--text);
+}
+
+@media (max-width: 414px) {
+	.up-btn {
+		display: none;
+	}
+}

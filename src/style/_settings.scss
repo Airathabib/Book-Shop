@@ -1,0 +1,30 @@
+body {
+	position: relative;
+	min-width: 100%;
+	min-width: 320px;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	line-height: 1.5;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: "Montserrat Bold";
+	color: var(--text);
+	background-color: rgb(255, 255, 255);
+}
+
+.main {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+[class*=__container] {
+	max-width: clamp(20rem, 6rem + 70vw, 90rem);
+	margin: 0 auto;
+	padding: 0 clamp(0.625rem, -1.25rem + 9.38vw, 10rem);
+}

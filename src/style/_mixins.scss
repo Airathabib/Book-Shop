@@ -1,0 +1,43 @@
+@mixin headerNav {
+	font-weight: 700;
+	font-size: .625rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: var(--text-grey);
+}
+
+@mixin btn {
+	color: var(--button);
+	border: 1px solid var(--button);
+	text-transform: uppercase;
+	width: 11rem;
+	height: 2.8125rem;
+	text-transform: uppercase;
+	background: transparent;
+	font-family: 'Montserrat', sans-serif;
+	font-size: .5rem;
+	font-weight: 700;
+	line-height: 9.75px;
+	cursor: pointer;
+	transition: font-size .3s ease-in-out, background-color .3s ease-in-out;
+	-webkit-transition: font-size .3s ease-in-out, background-color .3s ease-in-out;
+	-moz-transition: font-size .3s ease-in-out, background-color .3s ease-in-out;
+	-ms-transition: font-size .3s ease-in-out, background-color .3s ease-in-out;
+	-o-transition: font-size .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+@mixin bookDeskr {
+	font-weight: 400;
+	font-size: .625rem;
+	text-transform: capitalize;
+	color: var(--text-grey);
+}
+
+@mixin listGenres {
+	font-weight: 500;
+	font-size: .75rem;
+	text-transform: capitalize;
+	font-family: "Montserrat Medium";
+	color: var(--text-grey);
+	text-decoration: none;
+}

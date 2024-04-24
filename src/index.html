@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+	<title>
+		<%= htmlWebpackPlugin.options.title %>
+	</title>
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title  main__title">Bookshop</h1>
+				<div class="header__nav  nav">
+					<ul class="nav__menu">
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								books
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">audiobooks</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Stationery &#38; gifts</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">blog</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header__info info">
+					<a href="#" class="info__link"><img src="./" alt="user" class="auth__img"></a>
+					<a href="#" class="info__link"><img src="./" alt="search" class="search__img"></a>
+					<span class="info__link">
+						<a href="#" class="info__link"><img src="./" alt="cart" class="cart__img"></a>
+
+						<div class="quantityGoods">
+							<span class="quantityGoods__number">
+							</span>
+						</div>
+					</span>
+				</div>
+			</div>
+		</header>
+
+		<main class="main main__container">
+
+			<section class="hero">
+
+				<div class="slider-container">
+					<div class="top">
+
+						<div class="slider">
+
+							<img src="./" alt="first-banner" class="first-banner slider-image block">
+							<img src="./" alt="second-banner" class="second-banner slider-image">
+							<img src="./" alt="third-banner" class="third-banner slider-image">
+							<div class="promo-block">
+								<a href="#!" class="promo promo__blue">
+									<span>
+										<p class="promo__blue--text">Change old book on new</p>
+										<img src="./" alt="arrow" class="promo__arrow">
+									</span>
+								</a>
+								<a href="#!" class="promo promo__pink">
+									<span>
+										<p class="promo__pink--text">top 100 books 2022</p>
+										<img src="./" alt="arrow" class="promo__arrow">
+									</span>
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="bottom"></div>
+
+				</div>
+			</section>
+
+			<div class="book__items">
+
+				<aside class="categories">
+					<ul class="nav__categories">
+
+						<li class="nav__categories--item  category-active">Architecture</li>
+						<li class="nav__categories--item">Art &#38; Fashion </li>
+						<li class="nav__categories--item"> Biography</li>
+						<li class="nav__categories--item"> Business </li>
+						<li class="nav__categories--item"> Crafts &#38; Hobbies </li>
+						<li class="nav__categories--item"> Drama </li>
+						<li class="nav__categories--item"> Fiction </li>
+						<li class="nav__categories--item">Food &#38; Drink</li>
+						<li class="nav__categories--item"> Health &#38; Wellbeing</li>
+						<li class="nav__categories--item"> History &#38; Politics</li>
+						<li class="nav__categories--item"> Humor</li>
+						<li class="nav__categories--item"> Poetry</li>
+						<li class="nav__categories--item">Psychology</li>
+						<li class="nav__categories--item">Science</li>
+						<li class="nav__categories--item"> Technology</li>
+						<li class="nav__categories--item"> Travel &#38; Maps</li>
+					</ul>
+				</aside>
+
+				<div class="books"></div>
+			</div>
+
+		</main>
+
+		<div class="up-btn" id="scroll-top">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle"
+				viewBox="0 0 16 16">
+				<path fill-rule="evenodd"
+					d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+			</svg>
+		</div>
+
+	</div>
+</body>
+
+</html>

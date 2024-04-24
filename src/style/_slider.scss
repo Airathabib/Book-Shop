@@ -1,0 +1,138 @@
+.slider-container {
+	display: grid;
+	row-gap: 1.875rem;
+	width: 100%;
+}
+
+.top {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.slider {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	&-image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: none;
+	}
+}
+
+.bottom {
+	justify-self: center;
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.pagination-circle {
+	width: .75rem;
+	height: .75rem;
+	cursor: pointer;
+	background-color: var(--purple-bg);
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.active {
+	background-color: var(--purple);
+}
+
+@keyframes show {
+	0% {
+		opacity: 45%;
+	}
+}
+
+.block {
+	display: block;
+	animation: show 2s 1 linear;
+	-webkit-animation: show 2s 1 linear;
+}
+
+.promo {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	color: var(--text);
+	font-weight: 700;
+	font-size: 1.125rem;
+	line-height: 21.94px;
+	text-transform: uppercase;
+	padding-left: 1.25rem;
+	padding-bottom: 1.25rem;
+
+	&__blue {
+		position: absolute;
+		top: 100px;
+		right: -6.25rem;
+		width: 9.3125rem;
+		height: 12.75rem;
+		background: var(--purple);
+		z-index: 1;
+		transition: background .3s ease;
+		-webkit-transition: background .3s ease;
+		-moz-transition: background .3s ease;
+		-ms-transition: background .3s ease;
+		-o-transition: background .3s ease;
+
+		&:hover {
+			background: var(--purple-active);
+		}
+	}
+
+	&__blue--text {
+		margin-top: auto;
+		width: 6.8125rem;
+		margin-bottom: 4px;
+	}
+
+	&__pink {
+		position: absolute;
+		top: clamp(22.5rem, 4.688rem + 19.79vw, 28.438rem);
+		left: clamp(68.75rem, -1.563rem + 78.13vw, 92.188rem);
+		width: 9.875rem;
+		min-height: 17.0625rem;
+		background: var(--pink);
+		z-index: 1;
+		transition: background .3s ease;
+		-webkit-transition: background .3s ease;
+		-moz-transition: background .3s ease;
+		-ms-transition: background .3s ease;
+		-o-transition: background .3s ease;
+
+		&:hover {
+			background: var(--pink-active);
+		}
+	}
+
+	&__pink--text {
+		margin-top: auto;
+		width: 4.3125rem;
+		margin-bottom: 4px;
+	}
+}
+
+@media (max-width:1440px) {
+	.promo {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.slider-container {
+		display: none;
+	}
+}
