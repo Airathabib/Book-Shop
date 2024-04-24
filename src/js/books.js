@@ -2,7 +2,7 @@ import fillStar from "../assets/svg/star_filled.svg";
 import star from "../assets/svg/star.svg";
 import thumbnail from "../assets/img_png/thumbnail.png";
 
-// находим нужные элементы разметки
+// находим нужные элементы
 let quantityGoods = document.querySelector(".quantityGoods");
 let quantityGoodsNumber = document.querySelector(".quantityGoods__number");
 let categoryItems = document.querySelectorAll(".nav__categories--item");
@@ -12,7 +12,7 @@ let startIndex = 0;
 let indexBooksArray = [];
 let category = "Architecture";
 
-const apiKey = "AIzaSyA1Cmeh7H_dL8q8XuybP3IH6jzbHjOuGNU";
+const apiKey = "AIzaSyDrP99qMob9hQ92cfQVELe9qzmvpL4NUto";
 let books = document.querySelector(".books");
 
 // определяем и экспортируем функцию которая по клику вызывает нужную категорию книг

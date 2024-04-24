@@ -7,9 +7,6 @@ import { getBooks } from "./books.js";
 import { scroll } from "./scroll.js";
 
 
-const promo = document.querySelectorAll(".promo");
-promo.forEach(item => item.addEventListener("click", e => e.preventDefault()));
-
 document.addEventListener("DOMContentLoaded", function () {
 	imgRender();
 	initSlider();

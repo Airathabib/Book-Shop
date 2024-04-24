@@ -5,6 +5,10 @@ let currentSlideIndex = 0;
 const paginationCircles = [];
 
 export function initSlider() {
+
+	const promo = document.querySelectorAll(".promo");
+	promo.forEach(item => item.addEventListener("click", e => e.preventDefault()));
+
 	function createPaginationCircle() {
 		const div = document.createElement("div");
 		div.classList.add("pagination-circle");
